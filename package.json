@@ -1,0 +1,14 @@
+{
+  "name": "surcosstreaming-cloudflare",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "key": "node -e \"console.log(require('node:crypto').randomBytes(32).toString('hex'))\""
+  },
+  "dependencies": {
+    "postal-mime": "2.7.4"
+  }
+}
